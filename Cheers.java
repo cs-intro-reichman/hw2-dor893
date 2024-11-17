@@ -12,7 +12,7 @@ public class Cheers {
 
            String cheer1 = "Give me ";
 
-           String cheer2 = newStr + " !!!";
+           String cheer2 = newStr + "!!!";
 
            String cheer3 = "What does that spell?";
 
@@ -29,7 +29,7 @@ public class Cheers {
                         linkWord = "a  ";                
                 }
 
-                System.out.println(cheer1 + linkWord + newStr.charAt(i) + ":  " + newStr.charAt(i) + "!");
+                System.out.println(cheer1 + linkWord + newStr.charAt(i) + ": " + newStr.charAt(i) + "!");
            }
 
            System.out.println(cheer3);
