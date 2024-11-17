@@ -12,9 +12,9 @@ public class Cheers {
 
            String cheer1 = "Give me ";
 
-           String cheer2 = newStr + " ! ! !";
+           String cheer2 = newStr + " !!!";
 
-           String cheer3 = "What does thaat spell?";
+           String cheer3 = "What does that spell?";
 
            String linkWord = "";
 
