@@ -4,7 +4,23 @@ public class Cheers {
 
            String Str = args[0];
 
-           String newStr = Str.toUpperCase();
+           String newStr = "";
+
+           for(int k = 0; k < Str.length(); k++) {
+
+                int originalRepresentation = Str.charAt(k);
+
+                if (originalRepresentation > 65 && originalRepresentation < 90) {
+
+                        newStr += Str.charAt(k);
+                
+                } else {
+
+                        char newRepresentation = (char) (Str.charAt(k) - 32);
+
+                        newStr += newRepresentation;
+                }
+           }
 
            int input = Integer.parseInt(args[1]);
 
@@ -41,3 +57,5 @@ public class Cheers {
         
         }
 }
+
+
