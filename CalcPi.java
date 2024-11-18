@@ -10,15 +10,15 @@ public class CalcPi {
 
 			double denominator = (2 * k) + 1;
 
-			double rationalNumberor = 1 / denominator; 
+			double rationalNumberor = 1.0 / denominator; 
 
 				if(k % 2 == 0) {
 
-					sum += (double) rationalNumberor;
+					sum += rationalNumberor;
 
 				} else {
 
-					sum -= (double) rationalNumberor;
+					sum -= rationalNumberor;
 				}
 		}
 
