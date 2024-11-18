@@ -8,25 +8,25 @@ public class CalcPi {
 
 		for(int k = 0; k < input; k++) {
 
-			double denominator = (2 * k) + 1;
+			double denominator = (2.0 * k) + 1;
 
-			double rationalNumberor = 1.0 / denominator; 
+			double rationalNumber = 1.0 / denominator; 
 
 				if(k % 2 == 0) {
 
-					sum += rationalNumberor;
+					sum += rationalNumber;
 
 				} else {
 
-					sum -= rationalNumberor;
+					sum -= rationalNumber;
 				}
 		}
 
-		double piResult = (4 * sum);
+		double piResult = (4.0 * sum);
 
-	    System.out.println("pi according to Java: " + piResult);	
+	    System.out.println("pi according to Java: " + Math.PI);	
 
-	    System.out.println("pi, approximated: " + Math.PI);
+	    System.out.println("pi, approximated: " + piResult);
 
 	}
 }
