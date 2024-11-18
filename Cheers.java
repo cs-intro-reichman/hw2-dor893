@@ -10,7 +10,7 @@ public class Cheers {
 
                 int originalRepresentation = Str.charAt(k);
 
-                if (originalRepresentation > 65 && originalRepresentation < 90) {
+                if (originalRepresentation >= 65 && originalRepresentation <= 90) {
 
                         newStr += Str.charAt(k);
                 
