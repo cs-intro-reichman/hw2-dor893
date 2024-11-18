@@ -74,9 +74,6 @@ public class Collatz {
 			 System.out.println("(" + steps + ")");
 
 		 }
-	    }
-
-	if(mood.equals("c")){
 
 		System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
 
