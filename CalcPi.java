@@ -4,24 +4,29 @@ public class CalcPi {
 	    
 		int input = Integer.parseInt(args[0]);
 
-		double sum = 0;
+		double sum = 0.0;
 
-		for(int i = 0; i < input; i++) {
+		for(int k = 0; k < input; k++) {
 
-			double rationalNumberor = (double)1 / ((2 * i) + 1);
+			double denominator = (2 * k) + 1;
 
-				if(i % 2 == 0) {
+			double rationalNumberor = 1 / denominator; 
 
-					sum += rationalNumberor;
+				if(k % 2 == 0) {
+
+					sum += (double) rationalNumberor;
 
 				} else {
 
-					sum -= rationalNumberor;
+					sum -= (double) rationalNumberor;
 				}
 		}
-	System.out.println("pi according to Java: " + (4 * sum));	
 
-	System.out.println("pi, approximated: " + Math.PI);
+		double piResult = (4 * sum);
+
+	    System.out.println("pi according to Java: " + piResult);	
+
+	    System.out.println("pi, approximated: " + Math.PI);
 
 	}
 }
