@@ -6,7 +6,7 @@ public class CalcPi {
 
 		double sum = 0.0;
 
-		for(int k = 0; k < input; k++) {
+		for                                                                                                 ען(int k = 0; k < input; k++) {
 
 			double denominator = (2.0 * k) + 1;
 
@@ -26,7 +26,7 @@ public class CalcPi {
 
 	    System.out.println("pi according to Java: " + Math.PI);	
 
-	    System.out.println("pi, approximated:     " + piResult);
+	    System.out.println("pi, approximated:	  " + piResult);
 
 	}
 }
