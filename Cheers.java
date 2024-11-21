@@ -4,23 +4,7 @@ public class Cheers {
 
            String Str = args[0];
 
-           String newStr = "";
-
-           for(int k = 0; k < Str.length(); k++) {
-
-                int originalRepresentation = Str.charAt(k);
-
-                if (originalRepresentation >= 65 && originalRepresentation <= 90) {
-
-                        newStr += Str.charAt(k);
-                
-                } else {
-
-                        char newRepresentation = (char) (Str.charAt(k) - 32);
-
-                        newStr += newRepresentation;
-                }
-           }
+           String toUppercase = Str.toUpperCase();
 
            int input = Integer.parseInt(args[1]);
 
@@ -28,15 +12,15 @@ public class Cheers {
 
            String cheer1 = "Give me ";
 
-           String cheer2 = newStr + "!!!";
+           String cheer2 = toUppercase + "!!!";
 
            String cheer3 = "What does that spell?";
 
            String linkWord = "";
 
-           for(int i = 0; i < newStr.length(); i++){
+           for(int i = 0; i < toUppercase.length(); i++){
 
-                if(letters.indexOf(newStr.charAt(i)) != -1){
+                if(letters.indexOf(toUppercase.charAt(i)) != -1){
 
                         linkWord = "an ";
 
@@ -45,7 +29,7 @@ public class Cheers {
                         linkWord = "a  ";                
                 }
 
-                System.out.println(cheer1 + linkWord + newStr.charAt(i) + ": " + newStr.charAt(i) + "!");
+                System.out.println(cheer1 + linkWord + toUppercase.charAt(i) + ": " + toUppercase.charAt(i) + "!");
            }
 
            System.out.println(cheer3);
